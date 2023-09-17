@@ -1,9 +1,11 @@
+import Link from "next/link";
 
-const Card = ({ title, author, tags = [23, 43, 32, 67], articleImg }) => {
-    return (
+const Card = ({ title, author, tags, articleImg, serve }) => {
+  return (
+    <Link href={`articles/${serve}`}>
       <div className=" flex  gap-5 mb-4 bg-slate-300 rounded-2xl px-4 py-3 pr-3">
         <div className=" ">
-          <a className="text-xs text-gray-700">{author}</a>
+          <div className="text-xs text-gray-700">{author}</div>
           <h3 className=" font-bold text-lg w-[24rem] font-['Nova_Mono']">
             {title}
           </h3>
@@ -18,13 +20,13 @@ const Card = ({ title, author, tags = [23, 43, 32, 67], articleImg }) => {
             ))}
           </ul>
         </div>
-  
+
         <div className="w-40 rounded-2xl">
           <img className="rounded-2xl bg-cover" src={articleImg}></img>
         </div>
       </div>
-    );
-  };
-  
-  export default Card;
-  
+    </Link>
+  );
+};
+
+export default Card;

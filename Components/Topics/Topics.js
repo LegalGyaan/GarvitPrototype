@@ -1,7 +1,6 @@
 "use client";
 export const Topics = ({ tag, filterHandler }) => {
   const handleClick = () => {
-    console.log("clicked");
     filterHandler(tag);
   };
 

@@ -1,20 +1,24 @@
 "use client";
 import Card from "@/Components/Card/Card";
+import Nav from "@/Components/Nav/Nav";
+import Slider from "@/Components/Slider";
 import { Topics } from "@/Components/Topics/Topics";
 import { Blogs } from "@/db/blog";
 import { tags } from "@/db/tags";
 import React, { useEffect, useState } from "react";
-
 
 const page = () => {
   const [filter, setFilter] = useState(["all"]);
   const [filteredBlogs, setFilteredBlogs] = useState(Blogs);
 
   const handleFilter = (tag) => {
+    if (tag === "all") return setFilter(["all"]);
     if (filter.includes(tag)) {
+      if (filter.length === 1) return setFilter(["all"]);
       setFilter(filter.filter((t) => t !== tag));
     } else {
-      setFilter([...filter, tag]);
+      setFilter(filter.includes("all") ? [tag] : [...filter, tag]);
+      // setFilter((f) => [...f, tag]);
     }
   };
 
@@ -32,7 +36,9 @@ const page = () => {
 
   return (
     <>
+      <Nav />
       {/* CONTENT */}
+
       <div className=" flex pt-16 px-12 gap-3">
         {/* Articles Cards */}
         <div>
