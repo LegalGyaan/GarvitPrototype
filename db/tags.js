@@ -4,9 +4,6 @@ export const tags = [
   "Labour Law",
   "Work Rules",
   "Industrial Relation",
-  "Employment",
-  "Employee",
   "Safety Laws",
-  "Workplace",
   "Social Security",
 ];

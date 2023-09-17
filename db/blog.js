@@ -18,7 +18,7 @@ export const Blogs = [
   {
     title: "Exploring Social Security Laws in India: A Simple Guide",
     serve: "socialsecurity",
-    tags: ["Social Security", "Employment", "Employee", "Trending"],
+    tags: ["Social Security", "Employment", "Trending"],
     author: "Heart Affairs Carlyn Beccia in Heart Affairs",
     articleImg:
       "https://miro.medium.com/v2/resize:fill:350:235/1*gg20PlKE5SyC9t_mqyxShQ.jpeg",
