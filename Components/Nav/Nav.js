@@ -2,18 +2,21 @@
 import Image from "next/image";
 
 import headImg from "@/Assets/1.png";
+import Link from "next/link";
 
 const Nav = () => {
   return (
     <nav>
       <div className="fixed h-fit w-full  bg-[#000000] flex items-center justify-between px-24 py-5 text-white">
         <div>
-          <Image
-            src={headImg}
-            width={150}
-            height={50}
-            alt="Picture of the author"
-          />
+          <Link href="/">
+            <Image
+              src={headImg}
+              width={150}
+              height={50}
+              alt="Picture of the author"
+            />
+          </Link>
         </div>
         <div className="flex gap-5 items-center">
           <a href="#">Our story</a>

@@ -1,29 +1,28 @@
 "use client";
 import Card from "@/Components/Card/Card";
-import Nav from "@/Components/Nav/Nav";
-import Slider from "@/Components/Slider";
+
 import { Topics } from "@/Components/Topics/Topics";
 import { Blogs } from "@/db/blog";
 import { tags } from "@/db/tags";
 import React, { useEffect, useState } from "react";
 
 const page = () => {
-  const [filter, setFilter] = useState(["all"]);
+  const [filter, setFilter] = useState(["Trending"]);
   const [filteredBlogs, setFilteredBlogs] = useState(Blogs);
 
   const handleFilter = (tag) => {
-    if (tag === "all") return setFilter(["all"]);
+    if (tag === "Trending") return setFilter(["Trending"]);
     if (filter.includes(tag)) {
-      if (filter.length === 1) return setFilter(["all"]);
+      if (filter.length === 1) return setFilter(["Trending"]);
       setFilter(filter.filter((t) => t !== tag));
     } else {
-      setFilter(filter.includes("all") ? [tag] : [...filter, tag]);
+      setFilter(filter.includes("Trending") ? [tag] : [...filter, tag]);
       // setFilter((f) => [...f, tag]);
     }
   };
 
   useEffect(() => {
-    if (filter.includes("all")) {
+    if (filter.includes("Trending")) {
       setFilteredBlogs(Blogs);
     } else {
       setFilteredBlogs(
