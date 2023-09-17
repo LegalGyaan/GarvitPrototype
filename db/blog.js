@@ -5,7 +5,7 @@ export const Blogs = [
     tags: ["Industrial Relation", "Labour Law", "Work Rules", "Trending"],
     author: "Heart Affairs Carlyn Beccia in Heart Affairs",
     articleImg:
-      "https://miro.medium.com/v2/resize:fill:350:235/1*gg20PlKE5SyC9t_mqyxShQ.jpeg",
+      "https://3.imimg.com/data3/BX/WD/MY-12856501/construction-labour-services-500x500.jpg",
   },
   {
     title: "All About Employment Laws in India: What You Need to Know",

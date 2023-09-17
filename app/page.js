@@ -1,5 +1,6 @@
 "use client";
 import Card from "@/Components/Card/Card";
+import Slider from "@/Components/Slider";
 
 import { Topics } from "@/Components/Topics/Topics";
 import { Blogs } from "@/db/blog";
@@ -35,6 +36,7 @@ const page = () => {
 
   return (
     <>
+      <Slider />
       <div className=" flex pt-16 px-12 gap-3">
         {/* Articles Cards */}
         <div>

@@ -1,15 +1,18 @@
 // Purpose: WorkRules page component
 const page = () => {
   return (
-    <div className="px-52 py-10 mt-14">
+    <div className="px-36 py-10 mt-14">
       <h2 className="  text-3xl font-bold text-gray-500">
         All About Work Rules in India: Important Laws Made Simple
       </h2>
-      <img
-        src="https://miro.medium.com/v2/resize:fill:350:235/1*gg20PlKE5SyC9t_mqyxShQ.jpeg"
-        alt="Work Rules"
-        className="mt-5 rounded-xl"
-      />
+      <div className="flex justify-center">
+        <img
+          src="https://3.imimg.com/data3/BX/WD/MY-12856501/construction-labour-services-500x500.jpg"
+          alt="Work Rules"
+          className="mt-5 rounded-xl shadow-xl "
+          width={400}
+        />
+      </div>
       <p className="mt-3">
         Work rules in India are like a playbook for bosses and workers. They
         help everyone get along and make sure that workers are treated fairly.

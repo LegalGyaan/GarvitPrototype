@@ -7,7 +7,7 @@ import Link from "next/link";
 const Nav = () => {
   return (
     <nav>
-      <div className="fixed h-fit w-full  bg-[#000000] flex items-center justify-between px-24 py-5 text-white">
+      <div className="fixed h-fit w-full  bg-[#000000] flex items-center justify-between px-36 py-2 text-white">
         <div>
           <Link href="/">
             <Image
