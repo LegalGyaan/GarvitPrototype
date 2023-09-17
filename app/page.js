@@ -36,9 +36,6 @@ const page = () => {
 
   return (
     <>
-      <Nav />
-      {/* CONTENT */}
-
       <div className=" flex pt-16 px-12 gap-3">
         {/* Articles Cards */}
         <div>

@@ -1,7 +1,7 @@
 // Purpose: WorkRules page component
 const page = () => {
   return (
-    <div className="px-52 py-10">
+    <div className="px-52 py-10 mt-14">
       <h2 className="  text-3xl font-bold text-gray-500">
         All About Work Rules in India: Important Laws Made Simple
       </h2>
