@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import headImg from "@/Assets/1.png";
 import Link from "next/link";
+import TemporaryDrawer from "../hamburger";
 
 const Nav = () => {
   return (
@@ -22,7 +23,9 @@ const Nav = () => {
           <a href="#">Our story</a>
           <a href="#">Membership</a>
           <a href="#">Write</a>
-          <a href="#">Sign In</a>
+          <a href="#">
+            <TemporaryDrawer />
+          </a>
           <button className="rounded-full bg-green-400 p-2 text-white hover:bg-green-700 hover:ease-in ">
             Get Started
           </button>

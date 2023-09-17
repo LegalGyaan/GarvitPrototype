@@ -13,7 +13,7 @@ const Card = ({ title, author, tags, articleImg, serve }) => {
             {tags.map((tag) => (
               <li
                 key={tag}
-                className="bg-slate-400 px-3 py-1 rounded-2xl text-xs text-gray-800"
+                className="bg-slate-400 px-3 py-1 rounded-2xl text-[10px] text-gray-800"
               >
                 {tag}
               </li>
