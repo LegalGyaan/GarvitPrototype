@@ -8,7 +8,7 @@ import TemporaryDrawer from "../hamburger";
 const Nav = () => {
   return (
     <nav>
-      <div className="fixed h-fit w-full  bg-[#000000] flex items-center justify-between px-36 py-2 text-white">
+      <div className="fixed h-fit w-full  bg-[#000000] flex items-center justify-between px-40 py-4 text-white">
         <div>
           <Link href="/">
             <Image
@@ -26,9 +26,6 @@ const Nav = () => {
           <a href="#">
             <TemporaryDrawer />
           </a>
-          <button className="rounded-full bg-green-400 p-2 text-white hover:bg-green-700 hover:ease-in ">
-            Get Started
-          </button>
         </div>
       </div>
       <hr className=" border-[2px] border-black mb-8 "></hr>

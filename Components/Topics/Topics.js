@@ -6,7 +6,7 @@ export const Topics = ({ tag, filterHandler }) => {
 
   return (
     <div
-      className=" m-2 rounded-full bg-slate-300 cursor-pointer p-2 hover:bg-green-400 hover:ease-in "
+      className=" m-2 rounded-full bg-slate-300 cursor-pointer px-4 py-2 hover:bg-green-400 hover:ease-in shadow-md "
       onClick={handleClick}
     >
       {tag}

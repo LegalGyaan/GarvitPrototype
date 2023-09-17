@@ -37,10 +37,10 @@ const page = () => {
   return (
     <>
       <Slider />
-      <div className=" flex pt-16 px-12 gap-3">
+      <div className=" flex pt-14 px-40 gap-3">
         {/* Articles Cards */}
         <div>
-          <h1 className="text-4xl font-bold mb-5">Top Stories</h1>
+          <h1 className="text-4xl font-bold mb-5">Trending</h1>
           <div className="flex flex-col gap-5">
             {filteredBlogs?.map((blog) => (
               <Card key={blog.title} {...blog} />
@@ -49,11 +49,11 @@ const page = () => {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="pl-5 pr-5 items-center ">
+        <div className="ml-12 items-center ">
           <h3 className=" mb-2 font-semibold text-[1.25rem]">
             Discover more of what matters to you
           </h3>
-          <div className="block justify-evenly">
+          <div className="flex flex-wrap">
             {tags?.map((tag) => (
               <Topics key={tag} tag={tag} filterHandler={handleFilter} />
             ))}
